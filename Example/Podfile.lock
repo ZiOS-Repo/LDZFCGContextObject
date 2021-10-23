@@ -1,0 +1,16 @@
+PODS:
+  - LDZFCGContextObject (0.1.0)
+
+DEPENDENCIES:
+  - LDZFCGContextObject (from `../`)
+
+EXTERNAL SOURCES:
+  LDZFCGContextObject:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LDZFCGContextObject: 885c7e344c913fceda4142667b7ec036d0b22f6f
+
+PODFILE CHECKSUM: 1445dd2c3f4dbea5676e22ebf018165f51607842
+
+COCOAPODS: 1.11.2
