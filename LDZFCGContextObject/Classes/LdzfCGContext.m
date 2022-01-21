@@ -1,24 +1,24 @@
 //
-//  IUCGContextObject.m
-//  IUCGContextObject_Example
+//  LdzfCGContext.m
+//  LdzfCGContext_Example
 //
 //  Created by zhuyuhui on 2020/9/4.
 //  Copyright © 2020 zhuyuhui434@gmail.com. All rights reserved.
 //
 
-#import "IUCGContextObject.h"
+#import "LdzfCGContext.h"
 
-@interface IUCGContextObject ()
+@interface LdzfCGContext ()
 
 @property (nonatomic)         CGContextRef           context;
-@property (nonatomic, strong) IUCGContextObjectConfig *currentConfig;
-@property (nonatomic, strong) NSMutableDictionary    <NSString *, IUCGContextObjectConfig *> *configs;
+@property (nonatomic, strong) LdzfCGContextConfig *currentConfig;
+@property (nonatomic, strong) NSMutableDictionary    <NSString *, LdzfCGContextConfig *> *configs;
 
 @end
 
-@implementation IUCGContextObject
+@implementation LdzfCGContext
 
-- (instancetype)initWithCGContext:(CGContextRef)context config:(IUCGContextObjectConfig *)config {
+- (instancetype)initWithCGContext:(CGContextRef)context config:(LdzfCGContextConfig *)config {
     
     if (self = [super init]) {
         
@@ -30,7 +30,7 @@
     return self;
 }
 
-- (void)useCGContextConfig:(IUCGContextObjectConfig *)contextConfig storeAsCurrentConfig:(BOOL)asCurrentConfig {
+- (void)useCGContextConfig:(LdzfCGContextConfig *)contextConfig storeAsCurrentConfig:(BOOL)asCurrentConfig {
     
     NSParameterAssert(contextConfig);
     
@@ -117,7 +117,8 @@
                     clockwise);
 }
 
-- (void)contextConfig:(IUCGContextObjectConfig *)config drawStrokeBlock:(IUCGContextObjectDrawBlock_t)block {
+- (void)contextConfig:(LdzfCGContextConfig *)config
+      drawStrokeBlock:(LdzfCGContextDrawBlock_t)block {
     
     if (config) {
         
@@ -132,7 +133,7 @@
     
     if (block) {
         
-        __weak IUCGContextObject *weakSelf = self;
+        __weak LdzfCGContext *weakSelf = self;
         
         block(weakSelf);
     }
@@ -140,7 +141,8 @@
     [self strokePath];
 }
 
-- (void)contextConfig:(IUCGContextObjectConfig *)config drawFillBlock:(IUCGContextObjectDrawBlock_t)block {
+- (void)contextConfig:(LdzfCGContextConfig *)config
+        drawFillBlock:(LdzfCGContextDrawBlock_t)block {
     
     if (config) {
         
@@ -155,7 +157,7 @@
     
     if (block) {
         
-        __weak IUCGContextObject *weakSelf = self;
+        __weak LdzfCGContext *weakSelf = self;
         
         block(weakSelf);
     }
@@ -163,7 +165,9 @@
     [self fillPath];
 }
 
-- (void)contextConfig:(IUCGContextObjectConfig *)config drawingMode:(CGPathDrawingMode)drawingMode drawBlock:(IUCGContextObjectDrawBlock_t)block {
+- (void)contextConfig:(LdzfCGContextConfig *)config
+          drawingMode:(CGPathDrawingMode)drawingMode
+            drawBlock:(LdzfCGContextDrawBlock_t)block {
     
     if (config) {
         
@@ -178,7 +182,7 @@
     
     if (block) {
         
-        __weak IUCGContextObject *weakSelf = self;
+        __weak LdzfCGContext *weakSelf = self;
         
         block(weakSelf);
     }
@@ -217,7 +221,9 @@
     }
 }
 
-- (void)addCurveToPoint:(CGPoint)point firstControlPoint:(CGPoint)firstControlPoint secondControlPoint:(CGPoint)secondControlPoint {
+- (void)addCurveToPoint:(CGPoint)point
+      firstControlPoint:(CGPoint)firstControlPoint
+     secondControlPoint:(CGPoint)secondControlPoint {
     
     CGContextAddCurveToPoint(_context,
                              firstControlPoint.x, firstControlPoint.y,
@@ -225,7 +231,8 @@
                              point.x, point.y);
 }
 
-- (void)addQuadCurveToPoint:(CGPoint)point controlPoint:(CGPoint)controlPoint {
+- (void)addQuadCurveToPoint:(CGPoint)point
+               controlPoint:(CGPoint)controlPoint {
     
     CGContextAddQuadCurveToPoint(_context,
                                  controlPoint.x, controlPoint.y,
@@ -238,22 +245,30 @@
     [image drawAtPoint:point];
 }
 
-- (void)drawImage:(UIImage *)image atPoint:(CGPoint)point blendMode:(CGBlendMode)blendMode alpha:(CGFloat)alpha {
+- (void)drawImage:(UIImage *)image
+          atPoint:(CGPoint)point
+        blendMode:(CGBlendMode)blendMode
+            alpha:(CGFloat)alpha {
     
     [image drawAtPoint:point blendMode:blendMode alpha:alpha];
 }
 
-- (void)drawImage:(UIImage *)image inRect:(CGRect)rect {
+- (void)drawImage:(UIImage *)image
+           inRect:(CGRect)rect {
     
     [image drawInRect:rect];
 }
 
-- (void)drawImage:(UIImage *)image inRect:(CGRect)rect blendMode:(CGBlendMode)blendMode alpha:(CGFloat)alpha {
+- (void)drawImage:(UIImage *)image
+           inRect:(CGRect)rect
+        blendMode:(CGBlendMode)blendMode
+            alpha:(CGFloat)alpha {
     
     [image drawInRect:rect blendMode:blendMode alpha:alpha];
 }
 
-- (void)drawImage:(UIImage *)image asPatternInRect:(CGRect)rect {
+- (void)drawImage:(UIImage *)image
+  asPatternInRect:(CGRect)rect {
     
     [image drawAsPatternInRect:rect];
 }
@@ -268,13 +283,13 @@
     CGContextRestoreGState(_context);
 }
 
-- (void)drawInCurrentSpecialState:(IUCGContextObjectDrawBlock_t)block {
+- (void)drawInCurrentSpecialState:(LdzfCGContextDrawBlock_t)block {
     
     if (block) {
         
         [self saveGState];
         
-        __weak IUCGContextObject *weakSelf = self;
+        __weak LdzfCGContext *weakSelf = self;
         
         block(weakSelf);
         
@@ -282,28 +297,34 @@
     }
 }
 
-- (void)drawString:(NSString *)string atPoint:(CGPoint)point withAttributes:(NSDictionary *)attributes {
+- (void)drawString:(NSString *)string
+           atPoint:(CGPoint)point
+    withAttributes:(NSDictionary *)attributes {
     
     [string drawAtPoint:point withAttributes:attributes];
 }
 
-- (void)drawString:(NSString *)string inRect:(CGRect)rect withAttributes:(NSDictionary *)attributes {
+- (void)drawString:(NSString *)string
+            inRect:(CGRect)rect
+    withAttributes:(NSDictionary *)attributes {
     
     [string drawInRect:rect withAttributes:attributes];
 }
 
-- (void)drawAttributedString:(NSAttributedString *)string atPoint:(CGPoint)point {
+- (void)drawAttributedString:(NSAttributedString *)string
+                     atPoint:(CGPoint)point {
     
     [string drawAtPoint:point];
 }
 
-- (void)drawAttributedString:(NSAttributedString *)string inRect:(CGRect)rect {
+- (void)drawAttributedString:(NSAttributedString *)string
+                      inRect:(CGRect)rect {
     
     [string drawInRect:rect];
 }
 
 - (void)drawLinearGradientAtClipToRect:(CGRect)rect
-                         gradientColor:(IUGradientColor *)gradientColor
+                         gradientColor:(LdzfGradientColor *)gradientColor
                             startPoint:(CGPoint)startPoint
                               endPoint:(CGPoint)endPoint {
     

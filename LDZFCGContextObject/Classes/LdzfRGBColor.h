@@ -1,6 +1,6 @@
 //
-//  IURGBColor.h
-//  IUCGContextObject_Example
+//  LdzfRGBColor.h
+//  LdzfCGContext_Example
 //
 //  Created by zhuyuhui on 2020/9/4.
 //  Copyright © 2020 zhuyuhui434@gmail.com. All rights reserved.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IURGBColor : NSObject
+@interface LdzfRGBColor : NSObject
 
 /**
  *  取值范围都在 0 - 1 之间
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  由UIColor初始化RGBColor
  *
- *  @param color
+ *  @param color color
  *
  *  @return 实例对象
  */

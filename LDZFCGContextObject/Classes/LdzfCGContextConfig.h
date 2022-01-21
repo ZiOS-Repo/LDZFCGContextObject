@@ -1,13 +1,13 @@
 //
-//  IUCGContextObjectConfig.h
-//  IUCGContextObject_Example
+//  LdzfCGContextConfig.h
+//  LdzfCGContext_Example
 //
 //  Created by zhuyuhui on 2020/9/4.
 //  Copyright © 2020 zhuyuhui434@gmail.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "IURGBColor.h"
+#import "LdzfRGBColor.h"
 
 /**
  *  Get the CGFloat's array.
@@ -20,7 +20,7 @@ NS_INLINE CGFloat * IUCGFloatArrayWithCount(NSUInteger count) {
     
     return (CGFloat *)malloc(count * sizeof(CGFloat));
 }
-@interface IUCGContextObjectConfig : NSObject
+@interface LdzfCGContextConfig : NSObject
 
 /**
  *  线头样式
@@ -42,12 +42,12 @@ NS_INLINE CGFloat * IUCGFloatArrayWithCount(NSUInteger count) {
 /**
  *  线条颜色
  */
-@property (nonatomic, strong)  IURGBColor      *strokeColor;
+@property (nonatomic, strong)  LdzfRGBColor      *strokeColor;
 
 /**
  *  填充颜色
  */
-@property (nonatomic, strong)  IURGBColor      *fillColor;
+@property (nonatomic, strong)  LdzfRGBColor      *fillColor;
 
 #pragma mark - line dash pattern
 
@@ -70,17 +70,17 @@ NS_INLINE CGFloat * IUCGFloatArrayWithCount(NSUInteger count) {
  */
 
 /**
- *  A value that specifies how far into the dash pattern the line starts, in units of the user space. For example, passing a value of 3 means the line is drawn with the dash pattern starting at three units from its beginning. Passing a value of 0 draws a line starting with the beginning of a dash pattern.
+ *  表示在第一个虚线绘制的时候跳过多少个点
  */
 @property (nonatomic) CGFloat   phase;
 
 /**
- *  An array of values that specify the lengths of the painted segments and unpainted segments, respectively, of the dash pattern—or NULL for no dash pattern.
+ *  指明虚线是如何交替绘制「 注：lengths的值｛5,2｝表示先绘制5个点，再跳过2个点，如此反复」
  */
 @property (nonatomic) CGFloat  *lengths;
 
 /**
- *  If the lengths parameter specifies an array, pass the number of elements in the array. Otherwise, pass 0.
+ *  count的值等于lengths数组的长度
  */
 @property (nonatomic) size_t    count;
 

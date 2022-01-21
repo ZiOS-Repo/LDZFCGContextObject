@@ -1,6 +1,6 @@
 //
-//  IUGradientColor.h
-//  IUCGContextObject_Example
+//  LdzfGradientColor.h
+//  LdzfCGContext_Example
 //
 //  Created by zhuyuhui on 2020/9/4.
 //  Copyright © 2020 zhuyuhui434@gmail.com. All rights reserved.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-@interface IUGradientColor : NSObject
+@interface LdzfGradientColor : NSObject
 
 /**
  *  An opaque type that represents a Quartz gradient.

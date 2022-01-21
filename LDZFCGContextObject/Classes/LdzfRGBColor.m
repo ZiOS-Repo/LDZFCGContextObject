@@ -1,18 +1,18 @@
 //
-//  IURGBColor.m
-//  IUCGContextObject_Example
+//  LdzfRGBColor.m
+//  LdzfCGContext_Example
 //
 //  Created by zhuyuhui on 2020/9/4.
 //  Copyright © 2020 zhuyuhui434@gmail.com. All rights reserved.
 //
 
-#import "IURGBColor.h"
+#import "LdzfRGBColor.h"
 
-@implementation IURGBColor
+@implementation LdzfRGBColor
 
 + (instancetype)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha {
     
-    IURGBColor *color = [[[self class] alloc] init];
+    LdzfRGBColor *color = [[[self class] alloc] init];
     
     color.red   = red;
     color.green = green;
@@ -24,7 +24,7 @@
 
 + (instancetype)colorWithUIColor:(UIColor *)color {
 
-    IURGBColor *tmpColor = [[[self class] alloc] init];
+    LdzfRGBColor *tmpColor = [[[self class] alloc] init];
     
     CGFloat red   = 0;
     CGFloat green = 0;
@@ -43,7 +43,7 @@
 
 + (instancetype)randomColor {
 
-    IURGBColor *color = [[[self class] alloc] init];
+    LdzfRGBColor *color = [[[self class] alloc] init];
     
     color.red   = arc4random() % 256 / 255.f;
     color.green = arc4random() % 256 / 255.f;
@@ -55,7 +55,7 @@
 
 + (instancetype)randomColorWithAlpha:(CGFloat)alpha {
     
-    IURGBColor *color = [[[self class] alloc] init];
+    LdzfRGBColor *color = [[[self class] alloc] init];
     
     color.red   = arc4random() % 256 / 255.f;
     color.green = arc4random() % 256 / 255.f;

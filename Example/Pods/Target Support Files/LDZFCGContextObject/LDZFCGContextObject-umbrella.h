@@ -10,11 +10,11 @@
 #endif
 #endif
 
-#import "IUCGContextObject.h"
-#import "IUCGContextObjectConfig.h"
-#import "IUGradientColor.h"
-#import "IURGBColor.h"
+#import "LdzfCGContext.h"
+#import "LdzfCGContextConfig.h"
 #import "LDZFCGContextObject.h"
+#import "LdzfGradientColor.h"
+#import "LdzfRGBColor.h"
 
 FOUNDATION_EXPORT double LDZFCGContextObjectVersionNumber;
 FOUNDATION_EXPORT const unsigned char LDZFCGContextObjectVersionString[];

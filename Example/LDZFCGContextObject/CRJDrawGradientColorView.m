@@ -12,7 +12,7 @@
 
 @interface CRJDrawGradientColorView ()
 
-@property (nonatomic, strong)  IUCGContextObject  *contextObject;
+@property (nonatomic, strong)  LdzfCGContext  *contextObject;
 
 @end
 
@@ -31,15 +31,15 @@
 - (void)drawRect:(CGRect)rect {
     CGFloat height = self.frame.size.height;
     //获取操作句柄
-    _contextObject = [[IUCGContextObject alloc] initWithCGContext:UIGraphicsGetCurrentContext()
-                                                         config:[IUCGContextObjectConfig new]];
+    _contextObject = [[LdzfCGContext alloc] initWithCGContext:UIGraphicsGetCurrentContext()
+                                                         config:[LdzfCGContextConfig new]];
     
     //开始绘图
     for (int count = 0; count < 7; count++) {
         CGFloat lineHeight = arc4random() % (int)(height - 20);
         //绘制矩形
-        [_contextObject contextConfig:nil drawFillBlock:^(IUCGContextObject *contextObject) {
-            contextObject.currentConfig.fillColor = [IURGBColor randomColor];
+        [_contextObject contextConfig:nil drawFillBlock:^(LdzfCGContext *contextObject) {
+            contextObject.currentConfig.fillColor = [LdzfRGBColor randomColor];
             [contextObject addRectPath:CGRectMake(count * 30, height - lineHeight, 15, lineHeight)];
         }];
         //绘制文字
@@ -61,7 +61,7 @@
 //            0.192, 0.525, 0.75,  1.0,
 //            0.096, 0.415, 0.686, 1.0};
 //
-//        IUGradientColor *gradientColor = [IUGradientColor gradientColorWithLocations:locations
+//        LdzfGradientColor *gradientColor = [LdzfGradientColor gradientColorWithLocations:locations
 //                                                                      components:colorComponents
 //                                                                           count:count];
 //
@@ -81,7 +81,7 @@
 //            [self randomValue], [self randomValue], [self randomValue], 1.0,
 //            [self randomValue], [self randomValue], [self randomValue], 1.0};
 //
-//        IUGradientColor *gradientColor = [IUGradientColor gradientColorWithLocations:locations
+//        LdzfGradientColor *gradientColor = [LdzfGradientColor gradientColorWithLocations:locations
 //                                                                      components:colorComponents
 //                                                                           count:count];
 //

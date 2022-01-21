@@ -8,6 +8,6 @@
 #ifndef LDZFCGContextObject_h
 #define LDZFCGContextObject_h
 
-#import "IUCGContextObject.h"
+#import "LdzfCGContext.h"
 
 #endif /* LDZFCGContextObject_h */

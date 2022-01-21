@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05E88DAA06B397A0694F8F3C9FD61606 /* LdzfCGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = DA67F4ACE6C3CF0FCC6B51F72BF980D5 /* LdzfCGContext.m */; };
 		08EB20B6F0F81D8F9E4B8D7CFC512A01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0EB9E9CE8F04A520368C4E053B877E19 /* LDZFCGContextObject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C762FE69A7103D11B16C726882853685 /* LDZFCGContextObject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1ED3B112E2C8E995085C00D20D5C3B50 /* IUCGContextObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F195FFE401F0ED0277C8A837FEBA39A /* IUCGContextObject.m */; };
+		16622012658478DA57C325C15D149E82 /* LdzfCGContextConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 411589BE92807B99C356DDEA2FF55C99 /* LdzfCGContextConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B226688B99D415C264516F022CAABF /* Pods-LDZFCGContextObject_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 882ADE50391C6A0668FBB5EB00DFF379 /* Pods-LDZFCGContextObject_Tests-dummy.m */; };
 		2BF0792256070F8FD4C8836CA9D8BAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		342187B9C97DB3C0CEA9FA893681B9D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4B2BB163A82463E6F3944D496D1617BF /* IUCGContextObjectConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CC697355297E97185B50C235BEC15B9A /* IUCGContextObjectConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5707F4647F35217C9A821EDBD955796C /* IUGradientColor.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE2BCB35C51EDDD029F0EA3F5F91900 /* IUGradientColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		644CC826150D5B09DC696159E6BFDAB3 /* IUGradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 326926FCFBA88A11F81F97145B05D43A /* IUGradientColor.m */; };
-		92387CCFD3690E75E8002576C3A46828 /* IURGBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5B7ACB0A66272D5F21978E3098D907 /* IURGBColor.m */; };
+		58BDEE64D54DD40318FB9E12B5CF0405 /* LDZFCGContextObject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 583C186CF0E93094E1B1A19D332103FA /* LDZFCGContextObject-dummy.m */; };
+		6E889DB440651CC119186D46E9B37B77 /* LDZFCGContextObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C740A294A03DFF000E0A14456C7B51D /* LDZFCGContextObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CCBFF0D8D79AE9A9D2049604E213A99 /* LdzfRGBColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D515225179A0978A6F003B4CAFA9ADD /* LdzfRGBColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9304CD1E9F9202458840D9603B29AC1D /* Pods-LDZFCGContextObject_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C1C74738A8F3D8B2C05564C5D18D5FB /* Pods-LDZFCGContextObject_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAFF419CB15BE6F37E4604AE968244B8 /* IUCGContextObjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65A72925C35CA5D2DC3DE2EC814012 /* IUCGContextObjectConfig.m */; };
-		C0CF33EE2BE22A3608D9509344C693CF /* IUCGContextObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1704ED2C234BAFBEF5C0C5B1D32780 /* IUCGContextObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C44DDDD83239B27B2DE4AF2E25D141D2 /* IURGBColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 683DF63D839DB60E9770A59119EC571A /* IURGBColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB880EE42487AB48421426019A87B14E /* LDZFCGContextObject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BAF121FAC7CEA18D0E9190DFBD8D49 /* LDZFCGContextObject-dummy.m */; };
+		95F4F121C3D09AC761C50E5356E62ED2 /* LdzfRGBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D67D9B7714826470C69E90FCA8E83B8 /* LdzfRGBColor.m */; };
+		9840B926939355BCD77CB1790EFBDB06 /* LDZFCGContextObject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DDBAB6407BA55DADB63A0FCA636261 /* LDZFCGContextObject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6B6E4223BDB3B3CC8ABB5509C7A3C1E /* LdzfGradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6099B9E4D79AD1A2D49493D5713665 /* LdzfGradientColor.m */; };
+		CB0D753A1FF52CF53E4AC1112DFCF02E /* LdzfCGContextConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F62C030DEB6672DC0DE0DD757C7091 /* LdzfCGContextConfig.m */; };
 		E0D767E7279909D9E8F6A64A99E58E4C /* Pods-LDZFCGContextObject_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F26BD24CFFF19C49D6BECC710FEB49D2 /* Pods-LDZFCGContextObject_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E34D4747C3978B17D7DE76E7832B669B /* LDZFCGContextObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0EF162923E29A4E911484D9916E6D0 /* LDZFCGContextObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8FF818337576724CC0CEED5A096D682 /* LdzfGradientColor.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D49F5360A63D36449574C07895AF7A /* LdzfGradientColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED6E84669ADBE3D35414627ADDB2884C /* Pods-LDZFCGContextObject_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A99DB800E48B57EF56FCE1B375E1D64 /* Pods-LDZFCGContextObject_Example-dummy.m */; };
+		F0BFB6A4F63CBA6E3DDEAD96471B3D1D /* LdzfCGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5AA54FD3997F635974FFA9364BD5F6 /* LdzfCGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,46 +45,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1114D9DF563A1B5CA081FBC87E146BA0 /* LDZFCGContextObject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LDZFCGContextObject.modulemap; sourceTree = "<group>"; };
+		0D67D9B7714826470C69E90FCA8E83B8 /* LdzfRGBColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfRGBColor.m; path = LDZFCGContextObject/Classes/LdzfRGBColor.m; sourceTree = "<group>"; };
+		0F6469675B063D1AC30E69165BFC90FA /* LDZFCGContextObject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LDZFCGContextObject-Info.plist"; sourceTree = "<group>"; };
 		113BAB42811B35684B3B3BBDD0866B81 /* Pods-LDZFCGContextObject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFCGContextObject_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A6295D0B953FE3AF04211B7A46352EA /* Pods-LDZFCGContextObject_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LDZFCGContextObject_Example-frameworks.sh"; sourceTree = "<group>"; };
-		22015260675D720DC7D3C27F7CC8506D /* LDZFCGContextObject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFCGContextObject.debug.xcconfig; sourceTree = "<group>"; };
-		246709C9F8CFE98D209475C133001CA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D515225179A0978A6F003B4CAFA9ADD /* LdzfRGBColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfRGBColor.h; path = LDZFCGContextObject/Classes/LdzfRGBColor.h; sourceTree = "<group>"; };
+		1F5AA54FD3997F635974FFA9364BD5F6 /* LdzfCGContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfCGContext.h; path = LDZFCGContextObject/Classes/LdzfCGContext.h; sourceTree = "<group>"; };
 		2B14E8CEA7FA8DCE1D5D9EE098C6F985 /* Pods-LDZFCGContextObject_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LDZFCGContextObject_Tests"; path = Pods_LDZFCGContextObject_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		326926FCFBA88A11F81F97145B05D43A /* IUGradientColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUGradientColor.m; path = LDZFCGContextObject/Classes/IUGradientColor.m; sourceTree = "<group>"; };
-		32FB83F42E22582F1EF0D6DD7D5EF512 /* LDZFCGContextObject.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LDZFCGContextObject.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		3D65A72925C35CA5D2DC3DE2EC814012 /* IUCGContextObjectConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUCGContextObjectConfig.m; path = LDZFCGContextObject/Classes/IUCGContextObjectConfig.m; sourceTree = "<group>"; };
-		5D1704ED2C234BAFBEF5C0C5B1D32780 /* IUCGContextObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUCGContextObject.h; path = LDZFCGContextObject/Classes/IUCGContextObject.h; sourceTree = "<group>"; };
-		5F945845117E9EA61F6858A3157307BF /* LDZFCGContextObject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LDZFCGContextObject-Info.plist"; sourceTree = "<group>"; };
+		36DDBAB6407BA55DADB63A0FCA636261 /* LDZFCGContextObject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFCGContextObject-umbrella.h"; sourceTree = "<group>"; };
+		3C740A294A03DFF000E0A14456C7B51D /* LDZFCGContextObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDZFCGContextObject.h; path = LDZFCGContextObject/Classes/LDZFCGContextObject.h; sourceTree = "<group>"; };
+		411589BE92807B99C356DDEA2FF55C99 /* LdzfCGContextConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfCGContextConfig.h; path = LDZFCGContextObject/Classes/LdzfCGContextConfig.h; sourceTree = "<group>"; };
+		583C186CF0E93094E1B1A19D332103FA /* LDZFCGContextObject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LDZFCGContextObject-dummy.m"; sourceTree = "<group>"; };
 		643321CCE59F37E2BDB1797EF59FEA6D /* Pods-LDZFCGContextObject_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFCGContextObject_Tests-Info.plist"; sourceTree = "<group>"; };
 		65AE409DC7D67E2155E889AE407647F6 /* Pods-LDZFCGContextObject_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LDZFCGContextObject_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6779B90A9E4B3E41994750CBF609DE81 /* Pods-LDZFCGContextObject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFCGContextObject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		683DF63D839DB60E9770A59119EC571A /* IURGBColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IURGBColor.h; path = LDZFCGContextObject/Classes/IURGBColor.h; sourceTree = "<group>"; };
-		6B5DBEC0F793881EB06A8234E75AA731 /* LDZFCGContextObject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFCGContextObject-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7800FBA1199F76E34CF285A6DC8466C5 /* LDZFCGContextObject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFCGContextObject.debug.xcconfig; sourceTree = "<group>"; };
 		7A99DB800E48B57EF56FCE1B375E1D64 /* Pods-LDZFCGContextObject_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LDZFCGContextObject_Example-dummy.m"; sourceTree = "<group>"; };
 		866A7AFF73D5E53DAEF721638DBF536A /* Pods-LDZFCGContextObject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFCGContextObject_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		882ADE50391C6A0668FBB5EB00DFF379 /* Pods-LDZFCGContextObject_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LDZFCGContextObject_Tests-dummy.m"; sourceTree = "<group>"; };
-		8F195FFE401F0ED0277C8A837FEBA39A /* IUCGContextObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUCGContextObject.m; path = LDZFCGContextObject/Classes/IUCGContextObject.m; sourceTree = "<group>"; };
+		88F62C030DEB6672DC0DE0DD757C7091 /* LdzfCGContextConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfCGContextConfig.m; path = LDZFCGContextObject/Classes/LdzfCGContextConfig.m; sourceTree = "<group>"; };
+		8D06A181317E66BFE70C9051889FF688 /* LDZFCGContextObject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFCGContextObject-prefix.pch"; sourceTree = "<group>"; };
+		9420BD2B4E08EAD8B11150BCC9B7FECA /* LDZFCGContextObject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFCGContextObject.release.xcconfig; sourceTree = "<group>"; };
 		9C1C74738A8F3D8B2C05564C5D18D5FB /* Pods-LDZFCGContextObject_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LDZFCGContextObject_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F441A9FD44A64E0B43374893B3DD753 /* LDZFCGContextObject */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LDZFCGContextObject; path = LDZFCGContextObject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA5B7ACB0A66272D5F21978E3098D907 /* IURGBColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IURGBColor.m; path = LDZFCGContextObject/Classes/IURGBColor.m; sourceTree = "<group>"; };
+		A2D49F5360A63D36449574C07895AF7A /* LdzfGradientColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfGradientColor.h; path = LDZFCGContextObject/Classes/LdzfGradientColor.h; sourceTree = "<group>"; };
+		A4FE3DE403DBCACCE66E71FC85297F92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		AF90FD7C7DCAD31BCEAFE2010D51ED51 /* Pods-LDZFCGContextObject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFCGContextObject_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B08F5F04A57CA1C62253B2F53A50350B /* Pods-LDZFCGContextObject_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LDZFCGContextObject_Example"; path = Pods_LDZFCGContextObject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190881A22BFF1A18C01DAA091269F12 /* Pods-LDZFCGContextObject_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFCGContextObject_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BAE2BCB35C51EDDD029F0EA3F5F91900 /* IUGradientColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUGradientColor.h; path = LDZFCGContextObject/Classes/IUGradientColor.h; sourceTree = "<group>"; };
 		C6822A1D7B6BDB24232C14EBD78D4860 /* Pods-LDZFCGContextObject_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFCGContextObject_Example-Info.plist"; sourceTree = "<group>"; };
-		C762FE69A7103D11B16C726882853685 /* LDZFCGContextObject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFCGContextObject-umbrella.h"; sourceTree = "<group>"; };
 		C888C3058BA2CD298686F4613966052E /* Pods-LDZFCGContextObject_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LDZFCGContextObject_Example.modulemap"; sourceTree = "<group>"; };
-		CC697355297E97185B50C235BEC15B9A /* IUCGContextObjectConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUCGContextObjectConfig.h; path = LDZFCGContextObject/Classes/IUCGContextObjectConfig.h; sourceTree = "<group>"; };
 		D2C4619FEA9BF8E71D5447A06BD853A7 /* Pods-LDZFCGContextObject_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LDZFCGContextObject_Tests.modulemap"; sourceTree = "<group>"; };
-		D800C776DCDD797B1880841EA73DC8DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DA0EF162923E29A4E911484D9916E6D0 /* LDZFCGContextObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDZFCGContextObject.h; path = LDZFCGContextObject/Classes/LDZFCGContextObject.h; sourceTree = "<group>"; };
+		DA67F4ACE6C3CF0FCC6B51F72BF980D5 /* LdzfCGContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfCGContext.m; path = LDZFCGContextObject/Classes/LdzfCGContext.m; sourceTree = "<group>"; };
+		DB6099B9E4D79AD1A2D49493D5713665 /* LdzfGradientColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfGradientColor.m; path = LDZFCGContextObject/Classes/LdzfGradientColor.m; sourceTree = "<group>"; };
+		DBC230D815BDE02630408362571C89AB /* LDZFCGContextObject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LDZFCGContextObject.modulemap; sourceTree = "<group>"; };
 		E029362DED65025A1BBF4196F5411135 /* Pods-LDZFCGContextObject_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LDZFCGContextObject_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E4BAF121FAC7CEA18D0E9190DFBD8D49 /* LDZFCGContextObject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LDZFCGContextObject-dummy.m"; sourceTree = "<group>"; };
+		F18BF69E8E20DC828757E29B9B08A7D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F26BD24CFFF19C49D6BECC710FEB49D2 /* Pods-LDZFCGContextObject_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LDZFCGContextObject_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F39835A242CAF588B8ACDA3ECAC12014 /* LDZFCGContextObject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFCGContextObject.release.xcconfig; sourceTree = "<group>"; };
+		FF61C8AE13981F6F32C434322FF81B0F /* LDZFCGContextObject.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LDZFCGContextObject.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FFD087F8F75CF52FCC024B3AC39AFB66 /* Pods-LDZFCGContextObject_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFCGContextObject_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,29 +133,10 @@
 			path = "Target Support Files/Pods-LDZFCGContextObject_Example";
 			sourceTree = "<group>";
 		};
-		2AA8A2AB45DF7CB36289AFBF1A3039B1 /* LDZFCGContextObject */ = {
-			isa = PBXGroup;
-			children = (
-				5D1704ED2C234BAFBEF5C0C5B1D32780 /* IUCGContextObject.h */,
-				8F195FFE401F0ED0277C8A837FEBA39A /* IUCGContextObject.m */,
-				CC697355297E97185B50C235BEC15B9A /* IUCGContextObjectConfig.h */,
-				3D65A72925C35CA5D2DC3DE2EC814012 /* IUCGContextObjectConfig.m */,
-				BAE2BCB35C51EDDD029F0EA3F5F91900 /* IUGradientColor.h */,
-				326926FCFBA88A11F81F97145B05D43A /* IUGradientColor.m */,
-				683DF63D839DB60E9770A59119EC571A /* IURGBColor.h */,
-				AA5B7ACB0A66272D5F21978E3098D907 /* IURGBColor.m */,
-				DA0EF162923E29A4E911484D9916E6D0 /* LDZFCGContextObject.h */,
-				640333BB3A70C3CFCFC6EA5EA8380FDC /* Pod */,
-				74AF0D211A444F8D9631653CFCDCBCA9 /* Support Files */,
-			);
-			name = LDZFCGContextObject;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		4D1A824071F8523F7547964447E1317F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2AA8A2AB45DF7CB36289AFBF1A3039B1 /* LDZFCGContextObject */,
+				762F3D95DDC3AC4D359BAE751968D030 /* LDZFCGContextObject */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -168,29 +149,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		640333BB3A70C3CFCFC6EA5EA8380FDC /* Pod */ = {
+		5BE842B9ABF5EE4121F319EBBDEF7E69 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				32FB83F42E22582F1EF0D6DD7D5EF512 /* LDZFCGContextObject.podspec */,
-				D800C776DCDD797B1880841EA73DC8DC /* LICENSE */,
-				246709C9F8CFE98D209475C133001CA3 /* README.md */,
+				FF61C8AE13981F6F32C434322FF81B0F /* LDZFCGContextObject.podspec */,
+				A4FE3DE403DBCACCE66E71FC85297F92 /* LICENSE */,
+				F18BF69E8E20DC828757E29B9B08A7D9 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		74AF0D211A444F8D9631653CFCDCBCA9 /* Support Files */ = {
+		762F3D95DDC3AC4D359BAE751968D030 /* LDZFCGContextObject */ = {
 			isa = PBXGroup;
 			children = (
-				1114D9DF563A1B5CA081FBC87E146BA0 /* LDZFCGContextObject.modulemap */,
-				E4BAF121FAC7CEA18D0E9190DFBD8D49 /* LDZFCGContextObject-dummy.m */,
-				5F945845117E9EA61F6858A3157307BF /* LDZFCGContextObject-Info.plist */,
-				6B5DBEC0F793881EB06A8234E75AA731 /* LDZFCGContextObject-prefix.pch */,
-				C762FE69A7103D11B16C726882853685 /* LDZFCGContextObject-umbrella.h */,
-				22015260675D720DC7D3C27F7CC8506D /* LDZFCGContextObject.debug.xcconfig */,
-				F39835A242CAF588B8ACDA3ECAC12014 /* LDZFCGContextObject.release.xcconfig */,
+				1F5AA54FD3997F635974FFA9364BD5F6 /* LdzfCGContext.h */,
+				DA67F4ACE6C3CF0FCC6B51F72BF980D5 /* LdzfCGContext.m */,
+				411589BE92807B99C356DDEA2FF55C99 /* LdzfCGContextConfig.h */,
+				88F62C030DEB6672DC0DE0DD757C7091 /* LdzfCGContextConfig.m */,
+				3C740A294A03DFF000E0A14456C7B51D /* LDZFCGContextObject.h */,
+				A2D49F5360A63D36449574C07895AF7A /* LdzfGradientColor.h */,
+				DB6099B9E4D79AD1A2D49493D5713665 /* LdzfGradientColor.m */,
+				1D515225179A0978A6F003B4CAFA9ADD /* LdzfRGBColor.h */,
+				0D67D9B7714826470C69E90FCA8E83B8 /* LdzfRGBColor.m */,
+				5BE842B9ABF5EE4121F319EBBDEF7E69 /* Pod */,
+				A0174E0179519109F8BED16B342516C6 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LDZFCGContextObject";
+			name = LDZFCGContextObject;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7A990C5DA496C96769E82973CC9F96FD /* Targets Support Files */ = {
@@ -210,6 +195,21 @@
 				2B14E8CEA7FA8DCE1D5D9EE098C6F985 /* Pods-LDZFCGContextObject_Tests */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A0174E0179519109F8BED16B342516C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBC230D815BDE02630408362571C89AB /* LDZFCGContextObject.modulemap */,
+				583C186CF0E93094E1B1A19D332103FA /* LDZFCGContextObject-dummy.m */,
+				0F6469675B063D1AC30E69165BFC90FA /* LDZFCGContextObject-Info.plist */,
+				8D06A181317E66BFE70C9051889FF688 /* LDZFCGContextObject-prefix.pch */,
+				36DDBAB6407BA55DADB63A0FCA636261 /* LDZFCGContextObject-umbrella.h */,
+				7800FBA1199F76E34CF285A6DC8466C5 /* LDZFCGContextObject.debug.xcconfig */,
+				9420BD2B4E08EAD8B11150BCC9B7FECA /* LDZFCGContextObject.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LDZFCGContextObject";
 			sourceTree = "<group>";
 		};
 		A2F5A6E4EFA0F862A34190720F443C61 /* Pods-LDZFCGContextObject_Tests */ = {
@@ -250,16 +250,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		62D95ADBBCF323D48FEB0EE40D18722D /* Headers */ = {
+		6880BF87CFB01AF7B9E4D34268F34A24 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CF33EE2BE22A3608D9509344C693CF /* IUCGContextObject.h in Headers */,
-				4B2BB163A82463E6F3944D496D1617BF /* IUCGContextObjectConfig.h in Headers */,
-				5707F4647F35217C9A821EDBD955796C /* IUGradientColor.h in Headers */,
-				C44DDDD83239B27B2DE4AF2E25D141D2 /* IURGBColor.h in Headers */,
-				E34D4747C3978B17D7DE76E7832B669B /* LDZFCGContextObject.h in Headers */,
-				0EB9E9CE8F04A520368C4E053B877E19 /* LDZFCGContextObject-umbrella.h in Headers */,
+				F0BFB6A4F63CBA6E3DDEAD96471B3D1D /* LdzfCGContext.h in Headers */,
+				16622012658478DA57C325C15D149E82 /* LdzfCGContextConfig.h in Headers */,
+				6E889DB440651CC119186D46E9B37B77 /* LDZFCGContextObject.h in Headers */,
+				9840B926939355BCD77CB1790EFBDB06 /* LDZFCGContextObject-umbrella.h in Headers */,
+				E8FF818337576724CC0CEED5A096D682 /* LdzfGradientColor.h in Headers */,
+				7CCBFF0D8D79AE9A9D2049604E213A99 /* LdzfRGBColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +286,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD1B69A61B1EBE363F20580BE7A79206 /* Build configuration list for PBXNativeTarget "LDZFCGContextObject" */;
 			buildPhases = (
-				62D95ADBBCF323D48FEB0EE40D18722D /* Headers */,
-				5FFC614B5DB6E9F22E23D1D03D71FCB7 /* Sources */,
+				6880BF87CFB01AF7B9E4D34268F34A24 /* Headers */,
+				CDAC90678578FEED0292A51318E9A7D3 /* Sources */,
 				DE9A62039A190C45CA77F920F3FFDD0D /* Frameworks */,
 				5C52CEEFE265CBC84412742503B3B4C2 /* Resources */,
 			);
@@ -400,15 +400,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FFC614B5DB6E9F22E23D1D03D71FCB7 /* Sources */ = {
+		CDAC90678578FEED0292A51318E9A7D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED3B112E2C8E995085C00D20D5C3B50 /* IUCGContextObject.m in Sources */,
-				BAFF419CB15BE6F37E4604AE968244B8 /* IUCGContextObjectConfig.m in Sources */,
-				644CC826150D5B09DC696159E6BFDAB3 /* IUGradientColor.m in Sources */,
-				92387CCFD3690E75E8002576C3A46828 /* IURGBColor.m in Sources */,
-				DB880EE42487AB48421426019A87B14E /* LDZFCGContextObject-dummy.m in Sources */,
+				05E88DAA06B397A0694F8F3C9FD61606 /* LdzfCGContext.m in Sources */,
+				CB0D753A1FF52CF53E4AC1112DFCF02E /* LdzfCGContextConfig.m in Sources */,
+				58BDEE64D54DD40318FB9E12B5CF0405 /* LDZFCGContextObject-dummy.m in Sources */,
+				C6B6E4223BDB3B3CC8ABB5509C7A3C1E /* LdzfGradientColor.m in Sources */,
+				95F4F121C3D09AC761C50E5356E62ED2 /* LdzfRGBColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +472,7 @@
 		};
 		0F65D9252C58D6B78C416C3E97364B24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F39835A242CAF588B8ACDA3ECAC12014 /* LDZFCGContextObject.release.xcconfig */;
+			baseConfigurationReference = 9420BD2B4E08EAD8B11150BCC9B7FECA /* LDZFCGContextObject.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -635,7 +635,7 @@
 		};
 		6DE0A61F6BDA315091DE43F571C9ABD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22015260675D720DC7D3C27F7CC8506D /* LDZFCGContextObject.debug.xcconfig */;
+			baseConfigurationReference = 7800FBA1199F76E34CF285A6DC8466C5 /* LDZFCGContextObject.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -750,7 +750,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

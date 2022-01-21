@@ -1,6 +1,6 @@
 //
-//  IUCGContextObject.h
-//  IUCGContextObject_Example
+//  LdzfCGContext.h
+//  LdzfCGContext_Example
 //
 //  Created by zhuyuhui on 2020/9/4.
 //  Copyright © 2020 zhuyuhui434@gmail.com. All rights reserved.
@@ -9,14 +9,14 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-#import "IUCGContextObjectConfig.h"
-#import "IUGradientColor.h"
-@class IUCGContextObject;
+#import "LdzfCGContextConfig.h"
+#import "LdzfGradientColor.h"
+@class LdzfCGContext;
 
 
-typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
+typedef void(^LdzfCGContextDrawBlock_t)(LdzfCGContext *contextObject);
 
-@interface IUCGContextObject : NSObject
+@interface LdzfCGContext : NSObject
 
 /**
  *  操作句柄
@@ -26,12 +26,12 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
 /**
  *  Current context config.
  */
-@property (nonatomic, strong, readonly) IUCGContextObjectConfig *currentConfig;
+@property (nonatomic, strong, readonly) LdzfCGContextConfig *currentConfig;
 
 /**
  *  Context config array.
  */
-@property (nonatomic, strong, readonly) NSMutableDictionary <NSString *, IUCGContextObjectConfig *> *configs;
+@property (nonatomic, strong, readonly) NSMutableDictionary <NSString *, LdzfCGContextConfig *> *configs;
 
 /**
  *  Init method.
@@ -41,7 +41,7 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
  *
  *  @return Context config object
  */
-- (instancetype)initWithCGContext:(CGContextRef)context config:(IUCGContextObjectConfig *)config;
+- (instancetype)initWithCGContext:(CGContextRef)context config:(LdzfCGContextConfig *)config;
 
 /**
  *  Use the context config & store as current config.
@@ -49,7 +49,8 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
  *  @param contextConfig   Context config object.
  *  @param asCurrentConfig Yes means store, No means not store.
  */
-- (void)useCGContextConfig:(IUCGContextObjectConfig *)contextConfig storeAsCurrentConfig:(BOOL)asCurrentConfig;
+- (void)useCGContextConfig:(LdzfCGContextConfig *)contextConfig
+      storeAsCurrentConfig:(BOOL)asCurrentConfig;
 
 #pragma mark - 绘制操作流程
 /**
@@ -116,7 +117,7 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
  *  @param config context config
  *  @param block  draw block
  */
-- (void)contextConfig:(IUCGContextObjectConfig *)config drawStrokeBlock:(IUCGContextObjectDrawBlock_t)block;
+- (void)contextConfig:(LdzfCGContextConfig *)config drawStrokeBlock:(LdzfCGContextDrawBlock_t)block;
 
 /**
  *  填充区域用block (beginPath + closePath + 你绘制的代码 + fillPath)
@@ -124,7 +125,7 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
  *  @param config context config
  *  @param block  draw block
  */
-- (void)contextConfig:(IUCGContextObjectConfig *)config drawFillBlock:(IUCGContextObjectDrawBlock_t)block;
+- (void)contextConfig:(LdzfCGContextConfig *)config drawFillBlock:(LdzfCGContextDrawBlock_t)block;
 
 /**
  *  beginPath + your draw code + drawPathWithDrawingMode
@@ -133,7 +134,7 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
  *  @param drawingMode A path drawing mode constant—kCGPathFill, kCGPathEOFill, kCGPathStroke, kCGPathFillStroke, or kCGPathEOFillStroke. For a discussion of these constants, see CGPath Reference.
  *  @param block       draw block
  */
-- (void)contextConfig:(IUCGContextObjectConfig *)config drawingMode:(CGPathDrawingMode)drawingMode drawBlock:(IUCGContextObjectDrawBlock_t)block;
+- (void)contextConfig:(LdzfCGContextConfig *)config drawingMode:(CGPathDrawingMode)drawingMode drawBlock:(LdzfCGContextDrawBlock_t)block;
 
 #pragma mark - 图形绘制API
 /**
@@ -235,7 +236,7 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
  *
  *  @param block draw block
  */
-- (void)drawInCurrentSpecialState:(IUCGContextObjectDrawBlock_t)block;
+- (void)drawInCurrentSpecialState:(LdzfCGContextDrawBlock_t)block;
 
 #pragma mark - String related.
 
@@ -284,7 +285,7 @@ typedef void(^IUCGContextObjectDrawBlock_t)(IUCGContextObject *contextObject);
  *  @param endPoint       渐变终点的坐标
  */
 - (void)drawLinearGradientAtClipToRect:(CGRect)rect
-                         gradientColor:(IUGradientColor *)gradientColor
+                         gradientColor:(LdzfGradientColor *)gradientColor
                             startPoint:(CGPoint)startPoint
                               endPoint:(CGPoint)endPoint;
 
